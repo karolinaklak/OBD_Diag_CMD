@@ -17,7 +17,7 @@ This command line software allows you to read vehicle information, diagnostic tr
 * Open a terminal and navigate to the project directory
 * Execute by running the command ```__python car_diag.py__```
 * The software will display the vehicle information, diagnostic trouble codes and real-time engine parameters 
-* To clear the diagnostic trouble codes, uncomment the line ```__connection.query(obd.commands.CLEAR_DTC)__```. A V2 of this app will include a more user-friendly way to use the software.
+* To clear the diagnostic trouble codes, type '___y___' when prompted. A V2 of this app will include a more user-friendly way to use the software.
 * To stop the software, press '___Ctrl+C___'
 
 The software should work on most operating systems.
