@@ -8,6 +8,7 @@ if connection.is_connected():
     print("Connected to OBD-II adapter")
 else:
     print("Failed to connect to OBD-II adapter")
+    exit()
 
 # Get the car information 
 vin = connection.query(obd.commands.GET_VIN)
@@ -29,8 +30,10 @@ for code in codes.value:
     print(code)
     
 # Delete the trouble codes
-connection.query(obd.commands.CLEAR_DTC)
-print("Trouble codes cleared")
+print("Do you want to clear trouble codes ? (y/n)")
+if input() == "y":
+    connection.query(obd.commands.CLEAR_DTC)
+    print("Trouble codes cleared")
 
 
 # Get the engine details in real time
