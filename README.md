@@ -8,7 +8,7 @@ This command line software allows you to read vehicle information, diagnostic tr
 * Python 3.x
 * PyOBD library ```__pip install obd__```
 > if you are using a bluetooth adapter on Linux, you also need to install and configure the bluetooth tools. 
-`On Debian-based systems :```$ sudo apt-get install bluetooth bluez-utils blueman``
+`On Debian-based systems :```$ sudo apt-get install bluetooth bluez-utils blueman```
 * ELM-327 OBD2 Adapter
 
 ## Usage
